@@ -1,0 +1,130 @@
+{
+  "device": "cuda",
+  "timing_repeats": 3,
+  "maximum_tensor_fft_error": 3.294237539522739e-10,
+  "timings": [
+    {
+      "size": 64,
+      "naive_numpy_seconds": 0.003989019896835089,
+      "numpy_fft_seconds": 1.7642974853515625e-05,
+      "tensor_dft_seconds": 0.0001923898234963417
+    },
+    {
+      "size": 128,
+      "naive_numpy_seconds": 0.01621808111667633,
+      "numpy_fft_seconds": 1.0559801012277603e-05,
+      "tensor_dft_seconds": 0.0001825820654630661
+    },
+    {
+      "size": 256,
+      "naive_numpy_seconds": 0.06528926501050591,
+      "numpy_fft_seconds": 4.147831350564957e-05,
+      "tensor_dft_seconds": 0.00019018584862351418
+    },
+    {
+      "size": 512,
+      "naive_numpy_seconds": 0.26307774893939495,
+      "numpy_fft_seconds": 2.2232066839933395e-05,
+      "tensor_dft_seconds": 0.00019106781110167503
+    },
+    {
+      "size": 1024,
+      "naive_numpy_seconds": 1.0368990134447813,
+      "numpy_fft_seconds": 8.400809019804001e-05,
+      "tensor_dft_seconds": 0.0001956261694431305
+    },
+    {
+      "size": 2048,
+      "naive_numpy_seconds": 4.123060724232346,
+      "numpy_fft_seconds": 0.00010241195559501648,
+      "tensor_dft_seconds": 0.0003713262267410755
+    }
+  ],
+  "fastest_to_slowest": {
+    "64": [
+      [
+        "NumPy FFT",
+        1.7642974853515625e-05
+      ],
+      [
+        "GPU/tensor explicit DFT",
+        0.0001923898234963417
+      ],
+      [
+        "naive NumPy DFT",
+        0.003989019896835089
+      ]
+    ],
+    "128": [
+      [
+        "NumPy FFT",
+        1.0559801012277603e-05
+      ],
+      [
+        "GPU/tensor explicit DFT",
+        0.0001825820654630661
+      ],
+      [
+        "naive NumPy DFT",
+        0.01621808111667633
+      ]
+    ],
+    "256": [
+      [
+        "NumPy FFT",
+        4.147831350564957e-05
+      ],
+      [
+        "GPU/tensor explicit DFT",
+        0.00019018584862351418
+      ],
+      [
+        "naive NumPy DFT",
+        0.06528926501050591
+      ]
+    ],
+    "512": [
+      [
+        "NumPy FFT",
+        2.2232066839933395e-05
+      ],
+      [
+        "GPU/tensor explicit DFT",
+        0.00019106781110167503
+      ],
+      [
+        "naive NumPy DFT",
+        0.26307774893939495
+      ]
+    ],
+    "1024": [
+      [
+        "NumPy FFT",
+        8.400809019804001e-05
+      ],
+      [
+        "GPU/tensor explicit DFT",
+        0.0001956261694431305
+      ],
+      [
+        "naive NumPy DFT",
+        1.0368990134447813
+      ]
+    ],
+    "2048": [
+      [
+        "NumPy FFT",
+        0.00010241195559501648
+      ],
+      [
+        "GPU/tensor explicit DFT",
+        0.0003713262267410755
+      ],
+      [
+        "naive NumPy DFT",
+        4.123060724232346
+      ]
+    ]
+  },
+  "interpretation": "NumPy FFT uses an O(N log N) algorithm. Both explicit DFT methods perform O(N^2) work; tensor operations can parallelise that work on the GPU, while the nested Python loops run serially and are normally the slowest as N grows. Small inputs may be dominated by launch overhead."
+}

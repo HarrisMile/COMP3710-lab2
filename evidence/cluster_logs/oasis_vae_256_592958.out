@@ -1,0 +1,61 @@
+Job 592958 on a100-2, started Thu Sep 17 01:17:41 AEST 2026
+Thu Sep 17 01:17:41 2026
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 590.48.01              Driver Version: 590.48.01      CUDA Version: 13.1     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-PCIE-40GB          Off |   00000000:0B:00.0 Off |                    0 |
+| N/A   30C    P0             32W /  250W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+{'epoch': 1, 'train_loss': 24249.459689310843, 'train_reconstruction': 24236.859362065396, 'train_kl': 12.600354227551955, 'val_loss': 18433.175558035713, 'val_reconstruction': 18419.20161830357, 'val_kl': 13.97398624420166}
+{'epoch': 2, 'train_loss': 17628.081843698263, 'train_reconstruction': 17616.55953150869, 'train_kl': 11.522315559008264, 'val_loss': 17491.29095982143, 'val_reconstruction': 17481.677845982143, 'val_kl': 9.613224220275878}
+{'epoch': 3, 'train_loss': 17180.33793589611, 'train_reconstruction': 17169.168828901074, 'train_kl': 11.169098945642938, 'val_loss': 17281.793470982142, 'val_reconstruction': 17271.407087053572, 'val_kl': 10.386309596470424}
+{'epoch': 4, 'train_loss': 17031.318081281042, 'train_reconstruction': 17019.764441483858, 'train_kl': 11.55362153526963, 'val_loss': 17163.404631696427, 'val_reconstruction': 17149.17940848214, 'val_kl': 14.225380298069545}
+{'epoch': 5, 'train_loss': 16911.2148502173, 'train_reconstruction': 16898.44022920116, 'train_kl': 12.774643692749226, 'val_loss': 17035.8970703125, 'val_reconstruction': 17021.445982142857, 'val_kl': 14.451088006155832}
+{'epoch': 6, 'train_loss': 16834.548090852648, 'train_reconstruction': 16822.13829030422, 'train_kl': 12.409833475453965, 'val_loss': 17004.451311383928, 'val_reconstruction': 16989.485546875, 'val_kl': 14.96582156590053}
+{'epoch': 7, 'train_loss': 16796.249156017177, 'train_reconstruction': 16783.99605494619, 'train_kl': 12.253022020226283, 'val_loss': 16979.812862723214, 'val_reconstruction': 16962.398800223214, 'val_kl': 17.414106968470982}
+{'epoch': 8, 'train_loss': 16765.51206475062, 'train_reconstruction': 16753.431760270076, 'train_kl': 12.080282956559136, 'val_loss': 16980.790931919644, 'val_reconstruction': 16966.255440848214, 'val_kl': 14.535496493748257}
+{'epoch': 9, 'train_loss': 16750.806621223095, 'train_reconstruction': 16738.67343685327, 'train_kl': 12.133237311382167, 'val_loss': 16967.9166015625, 'val_reconstruction': 16953.45870535714, 'val_kl': 14.457826805114745}
+{'epoch': 10, 'train_loss': 16738.72104265832, 'train_reconstruction': 16726.865645048634, 'train_kl': 11.855415855811922, 'val_loss': 16978.63549107143, 'val_reconstruction': 16962.765290178573, 'val_kl': 15.870255906241281}
+{'epoch': 11, 'train_loss': 16726.94471750828, 'train_reconstruction': 16714.718012727648, 'train_kl': 12.226684649259049, 'val_loss': 16942.368331473215, 'val_reconstruction': 16924.8974609375, 'val_kl': 17.47098045349121}
+{'epoch': 12, 'train_loss': 16711.684534742344, 'train_reconstruction': 16699.81455013452, 'train_kl': 11.87001061281621, 'val_loss': 16966.225167410714, 'val_reconstruction': 16951.105859375, 'val_kl': 15.11925585610526}
+{'epoch': 13, 'train_loss': 16706.002027498966, 'train_reconstruction': 16693.722937577608, 'train_kl': 12.279027114640797, 'val_loss': 16973.350502232144, 'val_reconstruction': 16959.677120535714, 'val_kl': 13.673440633501325}
+{'epoch': 14, 'train_loss': 16695.013167425495, 'train_reconstruction': 16682.882557041597, 'train_kl': 12.130636720467876, 'val_loss': 16941.078041294644, 'val_reconstruction': 16926.182979910714, 'val_kl': 14.895056670052664}
+{'epoch': 15, 'train_loss': 16688.244509261174, 'train_reconstruction': 16676.097976381414, 'train_kl': 12.146551684827994, 'val_loss': 16942.63627232143, 'val_reconstruction': 16928.07416294643, 'val_kl': 14.562096323285784}
+{'epoch': 16, 'train_loss': 16682.440028714816, 'train_reconstruction': 16670.383122930463, 'train_kl': 12.056909321159717, 'val_loss': 16965.351450892857, 'val_reconstruction': 16951.05541294643, 'val_kl': 14.295876039777482}
+{'epoch': 17, 'train_loss': 16684.624699270487, 'train_reconstruction': 16672.003776903974, 'train_kl': 12.62095911139684, 'val_loss': 16951.054771205356, 'val_reconstruction': 16931.34935825893, 'val_kl': 19.70550790514265}
+{'epoch': 18, 'train_loss': 16672.89051182223, 'train_reconstruction': 16660.413839378103, 'train_kl': 12.476677544069606, 'val_loss': 16930.486997767857, 'val_reconstruction': 16915.0556640625, 'val_kl': 15.431282424926758}
+{'epoch': 19, 'train_loss': 16666.469225346646, 'train_reconstruction': 16654.48297159561, 'train_kl': 11.986226306056345, 'val_loss': 16918.010630580357, 'val_reconstruction': 16902.933956473214, 'val_kl': 15.076564543587821}
+{'epoch': 20, 'train_loss': 16663.73251565087, 'train_reconstruction': 16651.783875724337, 'train_kl': 11.94861967200475, 'val_loss': 17003.219866071428, 'val_reconstruction': 16990.65337611607, 'val_kl': 12.566514805385046}
+{'epoch': 21, 'train_loss': 16657.180544417424, 'train_reconstruction': 16644.586448416805, 'train_kl': 12.594091589087682, 'val_loss': 16943.890513392857, 'val_reconstruction': 16929.4748046875, 'val_kl': 14.415731811523438}
+{'epoch': 22, 'train_loss': 16652.004598251242, 'train_reconstruction': 16639.817554195986, 'train_kl': 12.187125824934599, 'val_loss': 16949.208035714284, 'val_reconstruction': 16936.57201450893, 'val_kl': 12.636010060991559}
+{'epoch': 23, 'train_loss': 16650.776981581126, 'train_reconstruction': 16638.635612841474, 'train_kl': 12.141354134540684, 'val_loss': 16928.533621651786, 'val_reconstruction': 16912.044810267857, 'val_kl': 16.488732991899763}
+{'epoch': 24, 'train_loss': 16648.065193631002, 'train_reconstruction': 16635.795765857823, 'train_kl': 12.269441254091578, 'val_loss': 16936.6939453125, 'val_reconstruction': 16921.676953125, 'val_kl': 15.017005402701242}
+{'epoch': 25, 'train_loss': 16640.34911462645, 'train_reconstruction': 16628.23691018212, 'train_kl': 12.112200433844762, 'val_loss': 16928.380887276784, 'val_reconstruction': 16914.129659598213, 'val_kl': 14.251156534467425}
+{'epoch': 26, 'train_loss': 16640.922531431086, 'train_reconstruction': 16628.5610383899, 'train_kl': 12.361501687409861, 'val_loss': 16947.64481026786, 'val_reconstruction': 16933.712527901786, 'val_kl': 13.932409994942802}
+{'epoch': 27, 'train_loss': 16636.320063508898, 'train_reconstruction': 16623.71841046668, 'train_kl': 12.601688855531199, 'val_loss': 16936.89428013393, 'val_reconstruction': 16920.407449776787, 'val_kl': 16.486874335152763}
+{'epoch': 28, 'train_loss': 16634.72055761072, 'train_reconstruction': 16622.33017190087, 'train_kl': 12.390415977958023, 'val_loss': 16951.713225446427, 'val_reconstruction': 16935.012779017856, 'val_kl': 16.700486482892718}
+{'epoch': 29, 'train_loss': 16630.44771186879, 'train_reconstruction': 16617.688754656458, 'train_kl': 12.758948664002071, 'val_loss': 16950.791908482144, 'val_reconstruction': 16936.997405133927, 'val_kl': 13.794412122453963}
+{'epoch': 30, 'train_loss': 16623.233611858443, 'train_reconstruction': 16611.05586131519, 'train_kl': 12.177758987376231, 'val_loss': 16928.59252232143, 'val_reconstruction': 16913.214341517858, 'val_kl': 15.378161975315638}
+{'epoch': 31, 'train_loss': 16626.458166261382, 'train_reconstruction': 16614.05269233754, 'train_kl': 12.405479109050422, 'val_loss': 16920.369754464286, 'val_reconstruction': 16906.086104910715, 'val_kl': 14.283775138854981}
+{'epoch': 32, 'train_loss': 16619.110325693295, 'train_reconstruction': 16606.662196683566, 'train_kl': 12.44808864909292, 'val_loss': 16935.924916294643, 'val_reconstruction': 16922.351478794644, 'val_kl': 13.57337463923863}
+{'epoch': 33, 'train_loss': 16616.778184499173, 'train_reconstruction': 16604.579166235515, 'train_kl': 12.199101249113777, 'val_loss': 16917.850697544643, 'val_reconstruction': 16903.175892857143, 'val_kl': 14.67482032775879}
+{'epoch': 34, 'train_loss': 16615.543919443295, 'train_reconstruction': 16603.122189957576, 'train_kl': 12.421714934292218, 'val_loss': 16926.551339285714, 'val_reconstruction': 16910.145396205357, 'val_kl': 16.405766923086983}
+{'epoch': 35, 'train_loss': 16611.260185999585, 'train_reconstruction': 16599.21830052256, 'train_kl': 12.04191030098113, 'val_loss': 16922.6115234375, 'val_reconstruction': 16909.09793526786, 'val_kl': 13.513491385323661}
+{'epoch': 36, 'train_loss': 16606.391242627276, 'train_reconstruction': 16594.23403223303, 'train_kl': 12.157239013949766, 'val_loss': 16920.282868303573, 'val_reconstruction': 16904.933035714286, 'val_kl': 15.349872234889439}
+{'epoch': 37, 'train_loss': 16607.50970418564, 'train_reconstruction': 16595.49256907078, 'train_kl': 12.01715325993418, 'val_loss': 16925.027260044644, 'val_reconstruction': 16910.863058035713, 'val_kl': 14.164165987287248}
+{'epoch': 38, 'train_loss': 16607.26058697227, 'train_reconstruction': 16594.965212386174, 'train_kl': 12.295423340323746, 'val_loss': 16935.638448660713, 'val_reconstruction': 16920.88359375, 'val_kl': 14.754784475054059}
+{'epoch': 39, 'train_loss': 16604.787439207368, 'train_reconstruction': 16592.45522363928, 'train_kl': 12.332174035887055, 'val_loss': 16932.561300223213, 'val_reconstruction': 16916.79031808036, 'val_kl': 15.771046720232283}
+{'epoch': 40, 'train_loss': 16599.529959773387, 'train_reconstruction': 16587.11469758899, 'train_kl': 12.4152336657442, 'val_loss': 16931.248716517857, 'val_reconstruction': 16915.481305803572, 'val_kl': 15.767543819972447}

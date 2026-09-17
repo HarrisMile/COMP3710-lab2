@@ -1,0 +1,40 @@
+Job 592961 on a100-2, started Thu Sep 17 01:23:10 AEST 2026
+Thu Sep 17 01:23:10 2026
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 590.48.01              Driver Version: 590.48.01      CUDA Version: 13.1     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-PCIE-40GB          Off |   00000000:0B:00.0 Off |                    0 |
+| N/A   40C    P0             55W /  250W |       0MiB /  40960MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Part 1 DFT: device=cuda N=2048 FFT=0.000102s tensor=0.000371s naive=4.123061s
+Part 2 Eigenfaces: accuracy=65.2174% components=150 variance=94.6507%
+Part 3.1 LFW CNN: accuracy=71.7391% RF=65.2174% improvement=6.5217%
+Part 3.2 CIFAR-10: accuracy=94.1200% target_epoch=35 wall=121.292s AMP=True
+Part 4 U-Net: mean_DSC=0.9775 per_label=[0.9993, 0.9652, 0.9659, 0.9796] all_above_0.9=True
+PyTorch: 2.14.0+cu130
+Device: cuda
+GPU: NVIDIA A100-PCIE-40GB
+test_loss=0.8681 test_accuracy=0.7174
+PyTorch: 2.14.0+cu130
+Device: cuda
+GPU: NVIDIA A100-PCIE-40GB
+VAE checkpoint: results/part4_vae_beta1_256/best.pt (256x256)
+{'loss': 16917.86088169643, 'reconstruction': 16903.18583984375, 'kl': 14.675008024488177}
+PyTorch: 2.14.0+cu130
+Device: cuda
+GPU: NVIDIA A100-PCIE-40GB
+{'sample_pixel_std': 0.05316110700368881, 'mean_pairwise_l1': 0.05822350084781647, 'minimum_pairwise_l1': 0.002745139179751277}
+Completed Thu Sep 17 01:23:42 AEST 2026

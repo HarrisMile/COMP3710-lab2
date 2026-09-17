@@ -7,21 +7,21 @@ This repository contains reproducible PyTorch implementations for all four parts
 3. The required two-layer LFW CNN and a from-scratch CIFAR-10 ResNet-18.
 4. OASIS VAE, categorical four-class UNet, and DCGAN tasks.
 
-The programs save metrics, plots, checkpoints, reconstructions, segmentations, or generated samples under `results/`. Datasets and results are intentionally excluded from Git.
+The programs save metrics, plots, checkpoints, reconstructions, segmentations, or generated samples under `results/`. Full datasets, generated working directories, and model checkpoints are excluded from normal Git history. A curated set of formal metrics, plots, inference outputs, and cluster logs is tracked under [`evidence/`](evidence/README.md).
 
 ## Verified formal results
 
 | Part | Formal result | Evidence directory |
 | --- | --- | --- |
-| DFT | Maximum tensor/FFT error `3.29e-10` | `results/part1_dft` |
-| Eigenfaces | 150 components, `94.65%` explained variance, `65.22%` Random Forest accuracy | `results/part2_eigenfaces` |
-| LFW CNN | `71.74%` accuracy, `6.52` percentage points above Random Forest | `results/part3_lfw_cnn` |
-| CIFAR-10 | `94.12%` at epoch 35 in `121.29 s` wall time (`115.53 s` benchmark time) | `results/part3_cifar_resnet_fast` |
-| OASIS VAE | 256x256, 40 epochs, `beta=1.0`, two-dimensional manifold; best validation loss `16917.85` | `results/part4_vae_beta1_256` |
-| OASIS U-Net | `0.9775` mean test DSC; per-label DSC `[0.9993, 0.9652, 0.9659, 0.9796]` | `results/part4_unet` |
-| OASIS GAN | 80 epochs in `432.42 s`; generated/real mean-pairwise-diversity ratio `0.8919` | `results/part4_gan` |
+| DFT | Maximum tensor/FFT error `3.29e-10` | [`evidence/part1_dft`](evidence/part1_dft) |
+| Eigenfaces | 150 components, `94.65%` explained variance, `65.22%` Random Forest accuracy | [`evidence/part2_eigenfaces`](evidence/part2_eigenfaces) |
+| LFW CNN | `71.74%` accuracy, `6.52` percentage points above Random Forest | [`evidence/part3_lfw_cnn`](evidence/part3_lfw_cnn) |
+| CIFAR-10 | `94.12%` at epoch 35 in `121.29 s` wall time (`115.53 s` benchmark time) | [`evidence/part3_cifar_resnet`](evidence/part3_cifar_resnet) |
+| OASIS VAE | 256x256, 40 epochs, `beta=1.0`, two-dimensional manifold; best validation loss `16917.85` | [`evidence/part4_vae`](evidence/part4_vae) |
+| OASIS U-Net | `0.9775` mean test DSC; per-label DSC `[0.9993, 0.9652, 0.9659, 0.9796]` | [`evidence/part4_unet`](evidence/part4_unet) |
+| OASIS GAN | 80 epochs in `432.42 s`; generated/real mean-pairwise-diversity ratio `0.8919` | [`evidence/part4_gan`](evidence/part4_gan) |
 
-These values come from full Rangpur runs rather than smoke tests. The generated images, metrics, and checkpoints remain local evidence because `results/` is intentionally ignored by Git.
+These values come from full Rangpur runs rather than smoke tests. The selected public evidence is copied without changing the recorded metrics. Full `results/` directories and reloadable checkpoints remain available locally and on Rangpur for the live demonstration.
 
 ## Setup
 

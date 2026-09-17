@@ -23,3 +23,5 @@ results/
 # Cluster logs
 *.out
 *.err
+!evidence/cluster_logs/*.out
+!evidence/cluster_logs/*.err
