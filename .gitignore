@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+.DS_Store
+.idea/
+.vscode/
+
+# Local course reference material
+COMP3710_Lab_2_*.pdf
+demo2_q1-3_overview.pdf
+videos_*/
+*.zip
+
+# Downloaded datasets and generated training artefacts
+data/
+results/
+*.pt
+*.pth
+*.joblib
+
+# Cluster logs
+*.out
+*.err
