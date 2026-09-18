@@ -170,6 +170,9 @@ Keep the following generated evidence for the demonstrator:
 
 See `docs/DEMO_GUIDE.md` for the explanation checklist.
 
+The use of AI assistance, validation steps, and responsibility boundaries is
+documented in [docs/AI_ASSISTANCE_REPORT.md](docs/AI_ASSISTANCE_REPORT.md).
+
 For checkpoint-loading inference across all trained neural models, plus the
 required CIFAR one-epoch training demonstration, first obtain an interactive
 `comp3710` GPU allocation and then run:
